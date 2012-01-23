@@ -1,0 +1,60 @@
+body { max-width: 800px; min-width: 300px; font-family: 'Helvetica Neue','Helvetica',sans-serif; position: relative;}
+a { color: #02679a; }
+#scroller { margin: 0 auto; /*padding-bottom: 10px;*/  width: 100%;  }
+.HomeWorkNYC #wrapper { margin: 0 20px 0 30px;  }
+.mobile #wrapper { margin: 0 10px !important;  }
+.facebook #wrapper { margin: 0 20px 0 30px;  }
+.google #wrapper { margin: 0 20px 0 30px;  }
+.app #wrapper { margin: 0 20px 0 20px;  }
+
+#header { width: 100%; height: 31px; background: url(media/labelbar_gradient.png) repeat-x; padding-top: 11px; text-align: center;}
+* html #header { height: 42px; }
+*:first-child+html #header { height: 42px; }
+#hwnyc-logo { background: url(media/logo.png) no-repeat; width: 188px; height: 20px; margin: 0 auto; display: block;  }
+
+.tabs { overflow:hidden; background: url(media/gradient_dark.png) repeat-x; height: 50px; }
+
+.tabs .tab { width: 20%; display: block; float: left;   background: url(media/gradient_dark.png) repeat-x; height: 50px;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box;   }
+
+.tabs .tab.selected { background: url(media/gradient_light.png) repeat-x;  }
+.tabs .tab a { display: block; width: 100%; height: 50px; float: left;   background-position: center 10px; background-repeat: no-repeat;  text-align: center; color: white; font-size: 10px;  font-weight: bold; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.tabs .tab a span { float: left; width: 100%; height: 15px; display: block;  cursor: pointer;  padding-top: 35px;}
+.tabs .tab.selected a .select-arrow {  background-image: url(media/labelbar_arrow.png); background-repeat: no-repeat; background-position: center -3px;  }
+
+.tabs #searchit a{ background-image: url(media/icon_search.png); border-right: 1px solid #568CA6; border-left: 1px solid #568CA6; }
+.tabs #attendid a{ background-image: url(media/icon_attend.png);  border-right: 1px solid #568CA6; }
+.tabs #calculate a{ background-image: url(media/icon_calculate.png);  border-right: 1px solid #568CA6; }
+.tabs #dial a { background-image: url(media/icon_dial.png);  border-right: 1px solid #568CA6; }
+.tabs #help a { background-image: url(media/icon_help.png);  border-right: 1px solid #568CA6;  }
+.tabs #help  { width: 19.9999% }
+
+.tabs #searchit.selected a{ background-image: url(media/icon_search_selected.png); color: #0B506F;}
+.tabs #attendid.selected a{ background-image: url(media/icon_attend_selected.png); color: #0B506F;}
+.tabs #calculate.selected a{ background-image: url(media/icon_calculate_selected.png);  color: #0B506F; }
+.tabs #dial.selected a { background-image: url(media/icon_dial_selected.png); color: #0B506F; }
+.tabs #help.selected a { background-image: url(media/icon_help_selected.png); color: #0B506F; }
+
+/* facebook styling */
+.facebook .tabs { padding-left: 185px; width: auto;}
+.facebook .tabs .tab { width: 100px !important; }
+/* facebook styling */
+
+/* mobile styling */
+.mobile .tabs .tab { width: 25% !important; }
+/*.mobile .tabs #attendid { width: 34%; }*/
+.mobile .tabs #dial { display: none; }
+/* mobile styling */
+
+
+
+* html #mainContent h1#search-it { display: inline; }
+
+#widget_nav_bar { display: none; }
+#privacy-stmt { display:none; }
+#developer_info { display: none; }
+
+#powered-footer p { color: #B0B0B0; font-size: 11px; margin: 10px 0; }
+#powered-footer img { margin-right: 10px; vertical-align: middle;}
+
+/*#logotype { display: none; }*/

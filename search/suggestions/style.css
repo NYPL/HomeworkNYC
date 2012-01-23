@@ -1,0 +1,55 @@
+div#all_terms {
+	height:500px;
+	overflow-y:scroll;
+	width:300px;
+	border:1px solid;
+	background-color:#eee;
+	padding:10px
+}
+#searchterm {
+	width:240px;
+}
+#display_term {
+	font-weight:700;
+}
+#show_thesaurus {
+	display:none;
+	padding-top:20px;
+}
+#edit_thesaurus {
+	width:90%;
+	background-color:#eee;
+	border:1px solid #ccc;
+	padding:10px;
+	margin:auto;
+}
+#user {
+	padding:20px;
+	text-align:right;
+	font-size:75%;
+}
+#thesaurus_instructions {
+	font-size:80%;
+}
+#javascript_test {
+	text-align:center;
+	padding:6px;
+	color:white;
+	background-color:red;
+}
+#instructions {
+	font-size:80%;
+	text-align:left;
+	padding:6px;
+	margin:4px;
+	color:#888;
+	border:1px solid;
+}
+#new_term {
+	border:5px solid red;
+	background-color:pink;
+	padding:15px;
+}
+#new_term div.buttons {
+	text-align:right;
+}

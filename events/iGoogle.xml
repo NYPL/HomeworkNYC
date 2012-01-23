@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs 
+	title="AttendIt"
+	height="480"
+	width="350"
+	author="MattTarr"
+	author_email="homeworkNYC@gmail.com"
+	description="Search and share teen-specific events hosted by the NYCity Libraries. Search by topic and/or boro."
+	screenshot="http://homeworknycbeta.org/widgets/events/screenshot.jpg"
+	thumbnail="http://homeworknycbeta.org/widgets/events/thumbnail.gif"
+	directory_title="AttendIt - powered by HomeWorkNYC">
+	
+	<Require feature="opensocial-0.7"/>
+    
+	</ModulePrefs> 
+
+  <Content type="html">
+	  <![CDATA[
+	
+	<script type="text/javascript">
+
+	    function init() {
+	      var req = opensocial.newDataRequest();
+	      req.add(req.newFetchPersonRequest('VIEWER'), 'viewer');
+	      req.send(printProfileScreen);
+	    };
+
+	    function printProfileScreen(data) {
+	      var viewer = data.get("viewer").getData();
+	      _gel('main').src = 'http://homeworknycbeta.org/widgets/events/widget.php';
+	    };
+
+	    gadgets.util.registerOnLoadHandler(init);
+
+	    </script>
+
+	    <iframe id="main" frameBorder=0 width=100% height=480></iframe>
+	  ]]>
+	</Content>
+</Module>

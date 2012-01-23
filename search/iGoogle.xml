@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs 
+	title="HomeworkNYC"
+	height="480"
+	width="350"
+	author="Flightpath"
+	author_email="homeworknyc@gmail.com"
+	description="Get better search results by utilizing the search term 'suggestions' provided by librarians and teachers."
+	screenshot="http://homeworknycbeta.org/widgets/search/screenshot.jpg"
+	thumbnail="http://homeworknycbeta.org/widgets/search/thumbnail.gif"
+	directory_title="SearchIt powered by HomeworkNYC">
+	
+	<Require feature="opensocial-0.7"/>
+    
+	</ModulePrefs> 
+
+  <Content type="html">
+	  <![CDATA[
+	
+	<script type="text/javascript">
+
+	    function init() {
+	      var req = opensocial.newDataRequest();
+	      req.add(req.newFetchPersonRequest('VIEWER'), 'viewer');
+	      req.send(printProfileScreen);
+	    };
+
+	    function printProfileScreen(data) {
+	      var viewer = data.get("viewer").getData();
+	      _gel('main').src = 'http://homeworknycbeta.org/widgets/search/widget.php';
+	    };
+
+	    gadgets.util.registerOnLoadHandler(init);
+
+	    </script>
+
+	    <iframe id="main" frameBorder=0 width=100% height=480></iframe>
+	  ]]>
+	</Content>
+</Module>

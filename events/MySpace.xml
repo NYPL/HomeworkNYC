@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs 
+	title="AttendIt :: powered by HomeworkNYC"
+	height="400"
+	description="Search and share teen-specific events hosted by the NYCity Libraries. Search by topic and/or boro."
+	screenshot="http://homeworknycbeta.org/widgets/events/screenshot.jpg"
+	thumbnail="http://homeworknycbeta.org/widgets/media/icon_64x64.png"
+	directory_title="AttendIt - powered by HomeWorkNYC">
+	
+    	<Require feature="opensocial-0.8"/>
+
+	</ModulePrefs> 
+
+
+
+  <Content type="html">
+	  <![CDATA[
+<script>	
+
+  var user_id = '0';
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if (pair[0] == 'viewerId') {
+      user_id =  pair[1];
+    }
+  }
+
+
+document.write('<iframe id="main" frameBorder=0 width=96% height=460 src="http://homeworknycbeta.org/widgets/events/widget.php?platform=myspace&nypl_user_id='+user_id+'"></iframe>');
+</script>
+
+]]>
+	</Content>
+</Module>

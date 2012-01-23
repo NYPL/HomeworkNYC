@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs 
+	title="ListIt"
+	height="480"
+	width="350"
+	author="MattTarr"
+	author_email="homeworkNYC@gmail.com"
+	description="Collect and share you favorite books, movies, games and more"
+	screenshot="http://homeworknycbeta.org/widgets/lists/screenshot.jpg"
+	thumbnail="http://homeworknycbeta.org/widgets/lists/thumbnail.gif"
+	directory_title="ListIt - powered by HomeWorkNYC">
+	
+	<Require feature="opensocial-0.7"/>
+    
+	</ModulePrefs> 
+
+  <Content type="html">
+	  <![CDATA[
+	
+	<script type="text/javascript">
+
+	    function init() {
+	      var req = opensocial.newDataRequest();
+	      req.add(req.newFetchPersonRequest('VIEWER'), 'viewer');
+	      req.send(printProfileScreen);
+	    };
+
+	    function printProfileScreen(data) {
+	      var viewer = data.get("viewer").getData();
+	      _gel('main').src = 'http://homeworknycbeta.org/widgets/lists/widget.php?iGoogle_id=' + viewer.getId();
+	    };
+
+	    gadgets.util.registerOnLoadHandler(init);
+
+	    </script>
+
+	    <iframe id="main" frameBorder=0 width=100% height=480></iframe>
+	  ]]>
+	</Content>
+</Module>

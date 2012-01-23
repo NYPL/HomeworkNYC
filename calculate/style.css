@@ -1,0 +1,18 @@
+#scroller.HomeWorkNYC  { background: url(../media/notebook_background.jpg) repeat-y 0px top; min-height: 100%; }
+#scroller.mobile { background: url(../media/notebook_background.jpg) repeat-y -22px top; }
+#scroller.facebook  { background: url(../media/notebook_background.jpg) repeat-y 0px top; min-height: 100%; }
+#scroller.google  { background: url(../media/notebook_background.jpg) repeat-y 0px top; min-height: 100%; }
+
+#mainContent h1 { font-size: 30px; font-weight: bold; color: #0a71a3; margin: 20px 0 10px 0; }
+#mainContent h2 { font-size: 22px; font-weight: bold; color: #045372; margin: 10px 0 10px 0; }
+#mainContent h3 { font-size: 18px; font-weight: bold; color: #045372; margin: 10px 0 10px 0; }
+#mainContent h3 a{ text-decoration: underline;}
+#mainContent p, #mainContent ul, #mainContent ol { font-size: 12px; line-height: 15px; margin: 10px 0;}
+#mainContent ul { list-style: disc; padding-left: 20px;}
+#mainContent ul li{ margin: 5px 0;}
+
+.calulate-body { padding: 0 10px;  border-bottom: 2px solid #9EBBCB;  }
+
+
+.help-body  ul li { margin: 10px 0; line-height: 12px;}
+.help-body  ul li span { padding-top: 3px; display: inline-block; }

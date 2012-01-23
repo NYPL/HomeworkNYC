@@ -1,0 +1,15 @@
+#mainContent h1 { font-size: 30px; font-weight: bold; color: #0a71a3; margin: 20px 0 15px 0; }
+#mainContent h2 { font-size: 22px; font-weight: bold; color: #045372; margin: 10px 0 10px 0; }
+#mainContent p, #mainContent ul, #mainContent ol { font-size: 12px; line-height: 15px; margin: 10px 0;  }
+#mainContent ul, #mainContent ul { list-style: none; }
+
+.help-body { padding: 0 10px;  border-bottom: 2px solid #9EBBCB;  }
+
+#dial-a-teacher-body { border-bottom: 0; }
+#attend-it-body  ul img.social-btn { margin-bottom: 0px;  }
+.help-body  ul img.social-btn{ float: left; margin-bottom: 0px; display: inline; margin-right: 5px; }
+.help-body  ul li { margin: 10px 0; line-height: 12px;}
+.help-body  ul li span { padding-top: 3px; display: inline-block; }
+.steel-BG { background: url(../media/steel_background_long.jpg) repeat-y;  }
+
+#yolink-text { vertical-align: middle; display: inline-block; margin-top: -1px; }

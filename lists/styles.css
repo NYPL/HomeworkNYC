@@ -1,0 +1,92 @@
+.feed_item {
+	padding:6px;
+	min-height:80px;
+}
+.feed_item .title {
+	font-weight:700;
+}
+.feed_item .description {
+	color:#000;
+}
+.feed_item .category {
+	float:right;
+}
+.roundCorners {
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+}
+.filter {
+	width:25%;
+	float:left;
+}
+.filter:hover {
+	font-weight:700;
+}
+.raw pre {
+	display:none;
+}
+form.tag_autocomplete_input input.ac_input {
+	width:400px;
+}
+.tags {
+	font-weight:700;
+	text-align:right;
+}
+.tags a {
+	padding:0 0 0 10px;
+}
+.serialized_item_data {
+	display:none;
+}
+#tag_editor {
+	display:none;
+	border:1px solid;
+	background-color:#888;
+	margin:4px;
+	padding:2px;
+}
+#add_tag {
+	width:80%;
+}
+#tag_cloud {
+	color:#fff;
+	padding:4px;
+}
+.manage_lists:hover,
+.remove_from_list:hover {
+	text-decoration:underline;
+}
+
+.bookcovers {
+	float:left;
+	clear:left;
+	height:60px;
+	width:auto;
+	margin:0 5px 0 0;
+}
+
+#myLists div.listbuttons {
+	width:170px;
+	background-color:#eee;
+	z-index:100px;
+	display:none;
+	border-bottom:1px solid;
+	padding:2px;
+	cursor:pointer;
+}
+#myLists div.listbuttons:hover {
+	background-color:#666;
+	color:#fff;
+}
+
+#loading {
+	padding:15px;
+	margin:20px;
+	font-size:16px;
+	font-weight:700;
+	background-color:#eee;
+	display:block;
+}
+#listsToggle {
+	cursor:pointer;
+}

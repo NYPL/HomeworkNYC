@@ -1,0 +1,72 @@
+#results { }
+#question { }
+.searchResult { font-size: 12px; line-height: 15px; padding: 5px 0; border-bottom: 1px solid #B3CBD7; /*background: url(../media/arrow_down.png) no-repeat 95% center; */padding-right: 10%; clear: both; min-height: 40px; }
+.searchResult img { margin-right: 10px; float: left; }
+.result_title_link { font-weight: bold; font-size: 14px; line-height: 18px;  display: inline; }
+#loadmore {	text-align:center; font-weight:700;	cursor:pointer; color: #02679A; padding-top: 20px; }
+#loading { margin:auto; z-index:2; position:absolute; top:200px; left:45%; background: url(../media/ajax-loader.gif) no-repeat center top; height:30px;	padding:20px 0;	text-align:center; color:#959595; font-size:10px; display:none; }
+
+#gale-ref { text-align: center; font-size: 10px; color: #02679a; padding: 5px 0;  }
+#gale-ref img { vertical-align: middle; }
+
+#search_button { float: right; width: 38%; display: inline; display: none; }
+#searchForm { padding: 10px 0px; }
+#search_string {  width: 100%; background: white url(../media/search_iconsmall.png) no-repeat 5px center; padding-left: 25px; height: 30px }
+#ddl_search { width: 100px; height: 30px }
+
+#developer_info { display: none; }
+
+#mainContent h1 { font-size: 30px; font-weight: bold; color: #0a71a3; line-height: 30px; }
+#mainContent h1.db-header { margin: 15px 0; }
+#mainContent h2 { font-size: 18px; font-weight: bold; color: #0A5171; line-height: 23px; margin: 15px 0; }
+#mainContent h1#search-it { background: url(../media/arrow.png) no-repeat 135px center; display: inline-block;  padding: 25px 60px 5px 0; }
+.mobile #mainContent h1#search-it {  width: 56%;  }
+#mainContent p, #mainContent ul, #mainContent ol { font-size: 12px; line-height: 17px; margin: 5px 0;  }
+#mainContent p.db-intro { margin: 20px 0; }
+#mainContent p.db-intro a { word-wrap: break-word; }
+#mainContent ul.search-types-list { list-style: none; padding-left: 0px; margin-left: 10px;  }
+#mainContent ul.search-types-list li { background: url(../media/bullet.gif) no-repeat left 6px; padding-left: 5px; margin: 2px 0;  }
+#mainContent ul.db-list { list-style: none; padding-left: 0px; margin-left: 10px;  }
+#mainContent ul.db-list li { margin: 10px 0;  }
+#scroller .mobile-lb { display: none;  }
+#scroller.mobile .mobile-lb { display: inline;  }
+#mainContent p.back-link { font-size: 14px; padding-top: 10px;  }
+
+/*.db-content { display: none; }*/
+
+#introText p { margin: 10px 0; }
+#introText ul { margin: 10px 0; }
+
+#scroller.HomeWorkNYC  { background: url(../media/notebook_background.jpg) repeat-y 0px top; min-height: 100%; }
+#scroller.mobile { background: url(../media/notebook_background.jpg) repeat-y -22px top; }
+#scroller.facebook  { background: url(../media/notebook_background.jpg) repeat-y 0px top; min-height: 100%; }
+#scroller.google  { background: url(../media/notebook_background.jpg) repeat-y 0px top; min-height: 100%; }
+
+#search-controls { margin: 0 auto; min-width: 300px;}
+#search-controls-wrapper { height: 40px; border-bottom: 1px solid #A9D0E1;  }
+
+#yolink_trigger { display: none; clear: both; padding: 10px 0; }
+
+#search-popuphelp { background: url(../media/overlay.png) no-repeat; width: 312px; height: 238px; position: absolute; top: 171px; left: 15px; display: none;}
+.mobile #search-popuphelp {  left: 5px; }
+#search-popuphelp #close-btn { position: absolute; width: 30px; height: 30px; background: transparent; top: 0px; right: 0px; cursor: pointer;}
+
+#search-popupinner { padding: 20px; }
+
+#search-popupinner  h3 { font-size: 24px; font-weight: bold; color: #0a71a3; }
+#search-popupinner  ul { list-style: none; }
+#search-popupinner  ul img.social-btn{ float: left; margin-bottom: 5px; display: inline; margin-right: 5px; }
+#search-popupinner  ul li { margin: 5px 0; line-height: 12px;}
+#search-popupinner  ul li span { padding-top: 3px; display: inline-block; }
+
+#powered-footer { padding-top: 10px; }
+
+.fadeTrans {
+-webkit-transition: all 500ms linear;
+-moz-transition: all 500ms linear;
+-o-transition: all 500ms linear;
+transition: all 500ms linear;
+}
+
+
+#yolink-text { vertical-align: middle; display: inline-block; margin-top: -1px; }
