@@ -1,0 +1,46 @@
+HomeworkNYC app/widgets
+
+Copyright (c) 2012, New York Public Library, Astor, Lenox and Tilden Foundations, Brooklyn Public Library, and Queens Library.
+All rights reserved.
+
+See attached LICENSE.txt for release license information.
+
+coded by: Matthew Tarr
+http://matthewtarr.com
+matthewtarr@me.com (or gmail.com)
+
+August 2010
+
+
+*************************************************
+basic app/widgets directory structure
+
+All app/widgets are in the 'widgets' directory
+Each app/widget is in a directory of its own
+_{filename}.php are files that are not called directly(there may be exceptions). No attempt is (yet) made to prevent them from being called directly 
+
+
+__README				this file
+_core.php				bunch of random php function that are shared across app/widgets
+_db.php					minimal wrapper functions for connecting to and querying mysql 
+_feedback_form.php		html form that posts to Google Docs :: https://spreadsheets.google.com/pub?key=0AkfCATB01ksMdHI3UFN4TDV2SDVBMG5FSXZkWnNkYmc&hl=en&output=html
+_platform.php			houses the code that determines what platform this code is running on. This is far from perfect and always changing (so far)
+_share_url.php			houses "addthis" code which is used in several places.
+_widget.css				cross-app css
+_widget.footer.php		cross-app footer (mostly station identification, cross-app nav, credits, feedback)
+_widget.js				cross-app javascript
+ask
+events					AttendIt! 
+lib						external libraries: 
+							jquery
+								jquery.autocomplete [not standard jquery autocomplete] :: http://dyve.net/jquery/?autocomplete
+								jquery.cookie
+							magpierss
+							simplhtmldom
+							facebook - 
+							opensocial - not currently used
+							
+lists					ListIt!
+media					images, or other media required by all apps/wodgets
+search					SearchIt!
+
