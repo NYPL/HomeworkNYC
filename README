@@ -3,14 +3,66 @@ HomeworkNYC app/widgets
 Copyright (c) 2012, New York Public Library, Astor, Lenox and Tilden Foundations, Brooklyn Public Library, and Queens Library.
 All rights reserved.
 
-See attached LICENSE.txt for release license information.
 
-coded by: Matthew Tarr
+Version 2 coded by: Flightpath Inc.
+http://www.flightpath.com/
+
+August 2011
+
+Version 1 coded by: Matthew Tarr
 http://matthewtarr.com
 matthewtarr@me.com (or gmail.com)
 
 August 2010
 
+
+*************************************************
+HomeworkNYC is for mobile devices, Facebook, and iGoogle.  This is an overview of running a project like this one. It will be available shortly in the Android Marketplace and iPhone App Store.
+
+The code for this project is available for free download at: github.com/nypl/homeworknyc
+
+The code currently connects the homeworkNYC app to the online resources of the New York City public libraries.  These specific resources may not be available or useful to other libraries.  Libraries wishing to adapt this software will need to change these connections to resources that they have access to.  
+
+
+Libraries looking to provide access to their own resources via cell phones and social networking sites will need to arrange for a developer to modify sections of this code and change the graphics to match their specific needs. 
+
+HomeworkNYC consists of 3 basic components:
+
+1. SearchIt! provides curriculum oriented web, news and image searching using a “Suggestion Engine”.  The Suggestion Engine enables local app administrators (teachers and librarians) to refine search results with clickable curriculum-related terms matched to the users’ own search terms.  So a user typing in “Lincoln” would see suggested terms like “Abraham Lincoln”, “Civil War”, “Emancipation Proclamation” … instead of general keyword matches like “Lincoln-Mercury Dealer”, “Lincoln Center”, “Lincoln, Nebraska” ...  The selected term is then sent to Yahoo.
+
+SearchIt! provides access to subscription Gale databases.  The app differs from standard library database access points in that it uses IP authentication from Gale.  This enables New York State users (only) to authenticate without requiring a library card number or password .  This makes searching much faster and easier.  This function requires a paid subscription to Gale databases and special arrangements for accessing their services in this manner.
+
+YoLink is included to provide students with enhanced search, sharing, editing and citation tools.
+
+2.  AttendIt! connects to the RSS events feeds of the 3 New York City public libraries.  The 3 RSS feeds were standardized to enable searching across the 3 systems.  Other libraries seeking to adapt this function will need to develop a compatible connection to their own events listings or a collection of multiple local listings.
+
+3.  Dial-A-Teacher provides live on-line homework help assistance from New York City teachers.  The app uses a free Meebo chat app.  Teachers answer simple homework questions using the chat app.  For more complex questions, such as math equations, teachers pass a link to an on-line whiteboard through the Meebo app.  This enables real-time drawing, document sharing and screen sharing capabilities.  Dial-A-Teacher uses the virtual whiteboard provided by Vyew.com.  A basic ad-supported version is available for free from the vendor.  Upgrades can be purchased to remove ads, format the page with local library branding and add functionality.  The tool may also be valuable for “Ask A Librarian” services or other real-time sharing functions.
+System Requirements
+
+A standard PHP/MySQL setup on an Apache/IIS server will be required for this program. 
+
+Breakdown of Each Application 
+
+SearchIt:
+Web/Images/News – Uses the Yahoo! search engine API via an OAuth connection.  When using Yahoo!’s service, you will need to obtain an Application ID for the Yahoo! Search Boss (http://developer.yahoo.com/search/boss/)  See site for details and pricing.
+GALE – Uses GALE’s proprietary search engine for more in-depth search in other publications/periodicals.  You will also need to set up an account with them in order to use their services.
+YoLink – This web service is tied in with the search results and injects additional info about each individual search result.  In order to access the YoLink API, you can register a new developer account when you buy into their commercial license: http://www.yolink.com/yolink/api/
+
+From a development standpoint, the usage of the Yolink API will require some front-end programming experience.
+Overall, the SearchIt! app uses separate database to generate the dynamic dropdown of suggested search terms while the user is typing.  (_db.php is a small wrapper for handling database queries).
+
+AttendIt!:
+This app hooks into an event database from New York Public Library, Brooklyn Public Library and Queens Library so you will need to obtain permissions to access whatever resource exists that stores relevant events.  (This also uses the same small wrapper “_db.php” for data access).
+It also uses a caching mechanism that pulls down the latest copy of events for optimized performance.
+Each event entry that is displayed in the app has an “AddThis” functionality attached to it.  This is a free service, and can be used without registration.  Although, registering will give you more control and analytics of what you’re audience is sharing. http://www.addthis.com/
+
+Dial-a-Teacher:
+Uses a 3rd-party chat service called Meebo. http://www.meebome.com/?w
+Registration is required for this kind of service.
+Implementation is simple, with a simple HTML embed code.
+
+Help
+This page is static HTML, no back-end programming required.
 
 *************************************************
 basic app/widgets directory structure
@@ -39,8 +91,10 @@ lib						external libraries:
 							simplhtmldom
 							facebook - 
 							opensocial - not currently used
-							
-lists					ListIt!
-media					images, or other media required by all apps/wodgets
+
+lists *					ListIt!
+media					images, or other media required by all apps/widgets
 search					SearchIt!
 
+
+*"lists" folder: ListIt! enables the creation of personal book/media lists but is not linked from Version 2 of homeworkNYC.  Further development is required to produce a working version of ListIt!
