@@ -22,7 +22,7 @@
 	<div id="show_feedback_form">Feedback?!</div>
 	<div id="googleform">
 
-		<form target="_new" action="http://spreadsheets.google.com/formResponse?key=tr7PSxL5vH5A0nEIvdZsdbg&amp;theme=0AX42CRMsmRFbUy03NThiZTgyMi1iNWZiLTQ1ZTUtYmJkZi00ZDMzODQ4NzA5YWI" method="post" id="ss-form">
+		<form target="_new" action="http://spreadsheets.google.com/formResponse?key=<? echo $your_google_form_key; ?>&amp;theme=<? echo $your_google_form_theme; ?>" method="post" id="ss-form">
 
 		<br />
 		<div class="errorbox-good">
