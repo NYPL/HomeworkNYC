@@ -75,7 +75,7 @@ _{filename}.php are files that are not called directly(there may be exceptions).
 __README				this file
 _core.php				bunch of random php function that are shared across app/widgets
 _db.php					minimal wrapper functions for connecting to and querying mysql 
-_feedback_form.php		html form that posts to Google Docs :: https://spreadsheets.google.com/pub?key=0AkfCATB01ksMdHI3UFN4TDV2SDVBMG5FSXZkWnNkYmc&hl=en&output=html
+_feedback_form.php		html form that posts to Google Docs (insert your own Google spreadsheet key)
 _platform.php			houses the code that determines what platform this code is running on. This is far from perfect and always changing (so far)
 _share_url.php			houses "addthis" code which is used in several places.
 _widget.css				cross-app css
